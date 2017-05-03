@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomView">
+        <attr name="customview_item_sum" format="integer" />
+        <attr name="customview_item_width" format="dimension" />
+        <attr name="customview_item_height" format="dimension" />
+        <attr name="customview_item_selected_color" format="color" />
+        <attr name="customview_item_unselected_color" format="color" />
+        <attr name="customview_text" format="string" />
+        <attr name="customview_drawable" format="reference"></attr>
+        <attr name="customview_type" format="enum">
+            <enum name="upleft" value="0" />
+            <enum name="upright" value="1" />
+            <enum name="downleft" value="2" />
+            <enum name="downright" value="3" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="GifView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifViewStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="MagicProgressCircle">
+        <attr name="start_color" format="color" />
+        <attr name="end_color" format="color" />
+        <attr name="empty_color" format="color" />
+        <attr name="circle_width" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="CircleLayout">
+        <attr name="start_degree" format="float" />
+        <attr name="end_degree" format="float" />
+        <attr name="layout_type" format="enum">
+            <enum name="clockwise" value="0" />
+            <enum name="anti_clockwise" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="MonochromeProgressCircle">
+        <attr name="mpc_start_angle" format="integer" />
+        <attr name="mpc_sweep_angle" format="integer" />
+        <attr name="mpc_circle_color" format="color" />
+        <attr name="mpc_background_color" format="color" />
+        <attr name="mpc_warning_color" format="color" />
+        <attr name="mpc_stroke_width" format="dimension" />
+        <attr name="mpc_type" format="enum">
+            <enum name="clockwise" value="0" />
+            <enum name="anti_clockwise" value="1" />
+        </attr>
+        <attr name="mpc_padding" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="TemperatureView">
+        <attr name="tv_item_sum" format="integer" />
+        <attr name="tv_start_angle" format="integer" />
+        <attr name="tv_end_angle" format="integer" />
+        <attr name="tv_max_temperature" format="integer" />
+        <attr name="tv_min_temperature" format="integer" />
+        <attr name="tv_warning_temperature" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="TempView">
+        <attr name="temp_start_point_color" format="color" />
+        <attr name="temp_end_point_color" format="color" />
+        <attr name="temp_circle_color" format="color" />
+        <attr name="temp_background_color" format="color" />
+        <attr name="temp_ball_stroke_color" format="color" />
+        <attr name="temp_text_color" format="color" />
+        <attr name="temp_circle_storke_width" format="dimension" />
+        <attr name="temp_ball_storke_width" format="dimension" />
+        <attr name="temp_text_size" format="dimension" />
+        <attr name="temp_start_angle" format="integer" />
+        <attr name="temp_sweep_angle" format="integer" />
+        <attr name="temp_max_temperature" format="integer" />
+        <attr name="temp_min_temperature" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ShaderCircle">
+        <attr name="sc_start_angle" format="integer" />
+        <attr name="sc_sweep_angle" format="integer" />
+        <attr name="sc_start_color" format="color" />
+        <attr name="sc_end_color" format="color" />
+        <attr name="sc_warning_color" format="color" />
+        <attr name="sc_reverse_color" format="color" />
+        <attr name="sc_stroke_width" format="dimension" />
+    </declare-styleable>
+    
+    
+     <declare-styleable name="ColorView">
+        <attr name="img" format="reference" />
+    </declare-styleable>
+
+</resources>

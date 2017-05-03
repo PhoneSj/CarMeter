@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:phone="http://schemas.android.com/apk/res/com.windbooter.carmeter"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="700dp"
+        android:layout_height="700dp"
+        android:layout_alignParentRight="true" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/power_bg" />
+
+        <com.windbooter.carmeter.customview.MonochromeProgressCircle
+            android:id="@+id/monochromeProgressCircle_battery"
+            android:layout_width="678dp"
+            android:layout_height="678dp"
+            android:layout_centerInParent="true"
+            phone:mpc_circle_color="#ff99ff00"
+            phone:mpc_start_angle="150"
+            phone:mpc_stroke_width="5dp"
+            phone:mpc_sweep_angle="60"
+            phone:mpc_type="clockwise" 
+            phone:mpc_background_color="#88ffffff"/>
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/right_img8" />
+
+        <RelativeLayout
+            android:layout_width="680dp"
+            android:layout_height="680dp"
+            android:layout_alignParentRight="true" >
+
+            <com.windbooter.carmeter.customview.TempView
+                android:id="@+id/tempView_inverter"
+                android:layout_width="580dp"
+                android:layout_height="580dp"
+                android:layout_centerInParent="true"
+                phone:temp_background_color="#ffaaaaaa"
+                phone:temp_circle_color="#ff4583ff"
+                phone:temp_circle_storke_width="2dp"
+                phone:temp_start_angle="105"
+                phone:temp_sweep_angle="30" />
+
+            <com.windbooter.carmeter.customview.TempView
+                android:id="@+id/tempView_machine"
+                android:layout_width="580dp"
+                android:layout_height="580dp"
+                android:layout_centerInParent="true"
+                phone:temp_background_color="#ffaaaaaa"
+                phone:temp_circle_color="#ff4583ff"
+                phone:temp_circle_storke_width="2dp"
+                phone:temp_start_angle="75"
+                phone:temp_sweep_angle="-30" />
+
+            <ImageView
+                android:id="@+id/imageView_rightCircle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/img04_green" />
+
+            <com.windbooter.carmeter.customview.ColorView
+                android:id="@+id/colorView_rightCircle0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                phone:img="@drawable/img01" />
+
+            <com.windbooter.carmeter.customview.ColorView
+                android:id="@+id/colorView_rightCircle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                phone:img="@drawable/img02" />
+
+            <com.windbooter.carmeter.customview.ColorView
+                android:id="@+id/colorView_rightCircle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                phone:img="@drawable/img03" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/right_img5" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/right_img6" />
+
+            <ImageView
+                android:id="@+id/imageView_moveSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/right_img7" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/move_speed_unit" />
+
+            <com.windbooter.carmeter.customview.CircleLayout
+                android:layout_width="650dp"
+                android:layout_height="650dp"
+                android:layout_centerInParent="true"
+                phone:layout_type="anti_clockwise"
+                phone:end_degree="85"
+                phone:start_degree="95" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_inverter_temperature" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_machine_temperature" />
+            </com.windbooter.carmeter.customview.CircleLayout>
+
+            <com.windbooter.carmeter.customview.AnimTextView
+                android:id="@+id/animTextView_moveSpeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0"
+                android:textColor="#ddffffff"
+                android:textSize="200sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="700dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/battery" />
+
+</RelativeLayout>

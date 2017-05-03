@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.windbooter.carmeter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+    <!-- 开机自启权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name="com.windbooter.carmeter.Application"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ThemeActivity" >
+        <activity
+            android:name="com.windbooter.carmeter.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity 
+            android:name="com.windbooter.carmeter.MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name="com.windbooter.carmeter.ConsoleActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.windbooter.carmeter.LoopbackActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.windbooter.carmeter.SerialPortActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.windbooter.carmeter.SerialPortPreferences"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service
+            android:name="com.windbooter.carmeter.SerialPortService"
+            android:label="@string/app_name" >
+        </service>
+
+        <activity
+            android:name="com.windbooter.carmeter.ChargeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 开机自启广播 -->
+        <receiver android:name="BootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" >
+                </action>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

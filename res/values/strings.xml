@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CarMeter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_msg">This program is the sample application provided
+		with project android-serialport-api. The project is free and open
+		source.\n\nMore information and bug report
+		on:\nhttp://code.google.com/p/android-serialport-api/\n\n- Cédric</string>
+    <string name="error_configuration">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serial
+		port.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown
+		reason.</string>
+    <string name="Outgoing">Outgoing bytes</string>
+    <string name="Incoming">Incoming bytes</string>
+    <string name="zero">0</string>
+    <string name="Setup">Setup</string>
+    <string name="Console">Console</string>
+    <string name="Loopback">Loopback</string>
+    <string name="About">About</string>
+    <string name="Quit">Quit</string>
+
+</resources>
